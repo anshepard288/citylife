@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Libre+Caslon+Display|Lobster|Open+Sans+Condensed:300&display=swap');
+
+html, * {
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+    width: 100%;
+    background: url(buildings-vector-free-seamless-pattern1.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 50%;
+    background-attachment: fixed;
+    font-family: 'Libre Caslon Display', serif;
+}
+
+header {
+    width: 100%;
+    height: 30vh;
+    background: url(buildings.png), url(city3.png);
+    background-size: 30% auto, 30% auto;
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #94c2e4;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 25vh;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
+    margin: auto;
+    height: 40%;
+}
+
+h2 {
+    height: 40%; 
+    line-height: 20vh;
+    font-family: 'Libre Caslon Display', serif;
+}
+
+a {
+ -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.summary {
+    width: 60%;
+    max-width: 900px;
+    height: 70vh;
+    float: right;
+    background-color: aliceblue;
+    font-family: 'Amatic SC', cursive;
+    font-size: .8em;
+}
+
+.summary p {
+    padding: 30px 0 0 30px;
+    width: 50%;
+    font-size: 2em;
+}
+
+.summary::after {
+    content: '';
+    position: absolute;
+    background: url(girl.png) no-repeat;
+    background-size: 100%;
+    background-position: bottom right;
+    width: 25%;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation-name: fade 2s forwards;
+    -webkit-animation-delay: 1s;
+    -moz-animation-name: fade 2s forwards;
+    -moz-animation-delay: 1s;
+    animation: fade 2s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes fade {
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fade {
+    100% { opacity: 1; }
+}
+
+@keyframes fade {
+    100% { opacity: 1; }
+}
+
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    margin-top: 25vh;
+    padding: 22.3px 22.3px 2px 10px;
+    width: 40%;
+    background: url(cell.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 370px;
+    height: 75vh;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0 0 10px;
+}
+
+.sidebar li  {
+    display: block;
+    color: #000;
+    padding: 2px 0 3.6px 2px;
+    font-size: 10px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: 'Libre Caslon Display', serif;
+}
+
+.sidebar li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    padding: 25px 0 0 10px;
+    font-family: 'Lobster', cursive;
+    line-height: 15px;
+    margin-top: 4.2vh;
+}
+
+.sidebar::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, .5);        
+    width: 60%;
+    left: 20%; /* one half of the remaining 30% */
+    height: 900px;
+    bottom: 0;
+    border-radius: 50px;
+}
+
+aside {
+    left: -500px;
+    background: blue;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: .5s;
+    -moz-animation: slide 1s forwards;
+    -moz-animation-delay: .5s;
+    animation: slide 1s forwards;
+    animation-delay: .5s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@-moz-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.preamble {
+    margin-top: 70vh;
+    background-color: steelblue;
+    background: url(dress.jpg) no-repeat;
+    background-size: cover;
+    background-size: 50%;
+    background-position: right;
+    background-color: steelblue;
+    height: 500px;
+}
+
+.preamble h3 {
+    font-size: 50px;
+    padding: 60px 0 0 20px;
+    font-family: 'Lobster', cursive;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 1.5px white solid;
+    margin-left: 20px;
+    width: 45%;
+    color: white;
+}
+
+.preamble p {
+    width: 35%;
+    color: white;
+    text-align: center;
+    margin-left: 5%;
+    font-family: 'Libre Caslon Display', serif;
+}
+
+p {
+    padding: 30px 0 0 30px;
+}
+
+.requirements a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.requirements a:hover {
+    color: aliceblue;
+    font-style: normal;
+    -webkit-transition: color 0.55s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.55s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.55s ease-out, box-shadow 0.25s ease-out;
+}
+
+.summary a, .participation a {
+    color: rgba(0, 17, 255, 0.6);
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.summary a:hover, .participation a:hover, .requirements p:last-child a:hover{
+    color: rgba(0, 5, 200, 0.8);
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+
+.explanation {
+    background-color: #4d9ab7;
+    background: url(coffee.png) no-repeat;
+    background-size: 50%;
+    background-position: left;
+    background-color: #4d9ab7;
+    height: 500px;
+}
+
+.explanation p{
+    padding: 20px 100px 20px 100px;
+    color: white;
+    margin:auto;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+    margin-left: 50%;
+}
+
+.explanation h3 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding: 60px 0 0 0;
+    border-bottom: 1.5px white solid;
+    margin-left: 52%;
+    margin-right: 2%;
+    line-height: 100px;
+}
+
+.participation {
+    width: 60%;
+    max-width: 900px;
+    height: 70vh;
+    background-color: aliceblue;
+    font-family: 'Amatic SC', cursive;
+}
+
+.participation p {
+    padding: 50px 30px 0 30px;
+    font-size: 1.5em;
+}
+
+.participation h3 {
+    top: 0;
+    margin-top: 1495px;
+    position: absolute;
+    right: 0;
+    padding: 530px 2.3px 4px 10px;
+    width: 40%;
+    background: url(cell.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 370px;
+    height: 75vh;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
+.benefits {
+    background-color: #4d9ab7;
+    background: url(book.jpg) no-repeat;
+    background-size: 50%;
+    background-position: left;
+    background-color: #5ab1cb;
+    height: 500px;
+}
+
+.benefits p{
+    padding: 20px 100px 20px 100px;
+    color: white;
+    margin:auto;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+    margin-left: 50%;
+}
+
+.benefits h3 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding: 60px 0 0 0;
+    border-bottom: 1.5px white solid;
+    margin-left: 52%;
+    margin-right: 2%;
+    line-height: 100px;
+}
+
+.requirements {
+    background-color: steelblue;
+    background: url(icecream.jpg) no-repeat;
+    background-size: cover;
+    background-size: 50%;
+    background-position: right;
+    background-color: steelblue;
+    height: 600px;
+    font-size: 14.5px;
+}
+
+.requirements h3 {
+    font-size: 50px;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 1.5px white solid;
+    margin-left: 20px;
+    width: 45%;
+    color: white;
+}
+
+.requirements p {
+    width: 45%;
+    color: white;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+}
+
+.requirements p:last-child {
+    width: auto;
+    margin-top: 3.7%;
+    padding: .8em 12%;
+    font-size: 1.2em;
+    height: 5%;
+    text-align: center;
+    background-color: aliceblue;
+    font-family: 'Amatic SC', cursive;
+    color: black;
+}
+
+.requirements p:last-child a {
+    color: rgba(0, 17, 255, 0.6);
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 20vh;
+    background: url(buildings.png), url(city3.png);
+    background-size: 20%, 20%;
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #94c2e4;
+    background-color: #94c2e4;
+    text-align: center;
+    line-height: 20vh;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lobster', cursive;
+    padding: 15px;
+    font-size: 30px;
+}
+
+footer a:hover{
+    color: rgba(0, 17, 255, 0.6); 
+}
+
+@media only screen and (max-width: 1199px) {
+    .summary, .participation {
+        font-size: .8em;
+    }
+    
+    .requirements, .explanation, .benefits, .preamble {
+        font-size: 14px;
+    }
+    
+    .requirements h3, .explanation h3, .benefits h3, .preamble h3 {
+        font-size: 40px;
+    }
+    
+     .summary::after {
+        width: 28%;
+    }
+    
+    .sidebar, .participation h3 {
+        background-size: 350px;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    
+    .summary {
+        width: 100%;
+    }
+    
+    .summary::after {
+        width: 45%;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        line-height: 90px;
+    }
+    
+    .preamble {
+        background: url();
+        background-color: steelblue;
+        width: 100%;
+    }
+    
+    .preamble p, .preamble h3 {
+        width: 85%;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sidebar {
+        background: url(cell.png) no-repeat;
+        background-size: 39%;
+        background-position: center;
+        position: relative;
+        margin: 0;
+        margin-top: 0;
+        width: 90%;
+        margin-left:auto;
+        margin-right:auto;
+        height: 400px;
+    }
+    
+    .sidebar ul {
+        list-style-type: none;
+        margin: 0;
+        margin-top: 0;
+        padding: 0px 0 0 10px;
+    }
+
+    .sidebar li  {
+        margin-top: 0;
+        display: block;
+        color: #000;
+        padding: 2px 0 0 0;
+        font-size: 10px;
+    }
+
+    .sidebar li a {
+        margin-top: 0;
+        font-family: 'Libre Caslon Display', serif;
+    }
+    
+    .sidebar h3 {
+        margin-top: 25px;
+        padding: 0 0 0 10px;
+    }
+    
+    .sidebar::after {
+        position: relative;
+    }
+    
+    .explanation {
+        background: url();
+        background-color: #4d9ab7;
+    }
+    
+    .explanation p, .explanation h3 {
+        width: 90%;
+        margin: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .participation {
+        width: 100%;
+    }
+    
+    .participation h3{
+        background: url();
+        margin: 0;
+        padding: 0;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        position: relative;
+        width: 90%;
+        border-bottom: 1.5px black solid;
+    }
+    
+    .participation p {
+        padding-top: 20px;
+    }
+    
+    .benefits {
+        width: 100%;
+        background: url();
+        background-color: #5ab1cb;
+    }
+    
+    .benefits h3, .benefits p{
+        width: 90%;
+        margin: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .requirements {
+        width: 100%;
+        background: url();
+        margin: 0;
+        background-color: steelblue;
+    }
+    
+    .requirements p, .requirements h3 {
+        width: 90%;
+        color: white;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .requirements p:last-child {
+        margin-top: 11%;
+    }
+  
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .summary, .participation {
+        font-size: .5em;
+    }
+    
+    .requirements, .explanation, .benefits, .preamble {
+        font-size: 12.5px;
+    }
+    
+    .requirements h3, .explanation h3, .benefits h3, .preamble h3 {
+        font-size: 30px;
+    }
+    
+     .summary::after {
+        width: 40%;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    footer a{
+        font-size: 20px;
+    }
+    
+     .requirements p:last-child {
+        margin-top: 14%;
+    }
+    
+    .sidebar {
+        background-size: 50%;
+        height: 350px;
+    }
+    
+     .sidebar li  {
+        font-size: 9px;
+    }
+
+    .sidebar li a {
+        font-size: 9px;
+    }
+    
+    .sidebar h3 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
